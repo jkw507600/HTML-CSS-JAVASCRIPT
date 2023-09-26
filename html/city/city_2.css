@@ -18,6 +18,7 @@
  body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.4;
+    font-weight: 400;
 
  }
 
@@ -70,39 +71,155 @@
 
  }
 
- .contents { }
+ .contents { 
+    margin-top: 120px;
+    margin-bottom: 248px;
+ }
 
  .contents h2 {
     margin: 0 auto;
     text-align: center;
-    display: block;
-    padding-top: 120px;
     font-size: 40px;
     width: 700;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
  }
 
  .contents .members {
     margin: 0 auto;
     width: 1170px;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-
-
-  
+    margin-bottom: 170px;
  }
 
- .contents .members li img {
-    width: 270px;
-    display: flex;
+/*member*/
 
- } 
- 
- .contents .members .names {
-    padding-top: 30px;
-    text-align: left;
+ .members ul {
+    display: flex;
+    gap: 30px;
+ }
+
+  
+.members .names {
+    padding-top: 26px;   
     padding-bottom: 20px;
+    color: #4B4B4B;
  } 
+
+ .members .names h3 {
+   margin-bottom: 10px;
+   font-size: 26px;
+   font-weight: 500;
+ }
+
+ .members .names p {
+   font-size: 16px;
+ }
+
+/*mocvie*/
+
+.movie {
+   width: 970px;
+   margin: 0 auto;
+   /* margin-bottom: 170px; */
+}
+
+.movie p {
+   font-size: 24px;
+   padding-bottom: 38px;
+   text-align: center;
+   width: 60%;
+   line-height: 1.6;
+   margin: 0 auto;
+}
+
+/*blog*/
+
+.blog {
+   width: 1170px;
+   padding-top: 170px;
+   margin: 0 auto;
+}
+
+.blog .titles {
+   color: #222222;
+   margin-bottom: 87px;
+   position: relative;
+}
+
+.blog .titles h3 {
+   font-size: 36px;
+   margin-right: auto;
+}
+
+.blog .titles a {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   position: absolute;
+   top:16px;
+   right: 0;
+}
+
+.blog ul {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+
+}
+
+.blog ul li {
+   display: flex;
+   gap: 32px;
+}
+
+.blog li .photo {
+   width: 370px;
+}
+
+.blog .texts {
+   padding-top: 10px;
+   padding-bottom: 40px;
+}
+
+.blog li .texts h4 {
+   font-size: 24px;
+   color: #4B4B4B;
+   
+}
+
+.blog li .texts p {
+   font-size: 16px;
+   color: #4B4B4B;
+   margin-top: 29px;
+   width: 82%;
+
+}
+
+.blog .texts .bottom {
+   font-size: 14px;
+   color: #808080;
+   margin-top: 65px;
+      
+}
  
- .footer {}
+ .footer {
+   background-color: #F5F5F5;
+   text-align: center;
+   color: #808080; 
+   padding-top: 52px;
+   padding-bottom: 56px;
+
+ }
+ 
+ .footer p {
+   margin-bottom: 30px;
+ }
+ 
+ .footer .sns {
+   display: flex;
+   align-items: center;
+   font-size: 24px;
+   color: #4B4B4B;
+   justify-content: center;
+   gap: 31px;
+
+ }
