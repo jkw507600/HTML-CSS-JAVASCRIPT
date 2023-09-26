@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 폰트 컬러 */
+}
+
+/* 전체에 적용할 바디를 까먹지말자 서체 컬러 폰트*/
+
+body { 
+    font-size: 14px;
+    color: #222222;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.header {
+    display: flex;
+    padding: 0 60px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    margin-right: auto;
+}
+
+/*이미지사진에 라인을 위해 블락*/
+
+.header .logo img {
+    display: block;
+    width: 95px;
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.header li a {
+    justify-content: space-around;
+    padding: 0 55px;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+}
+
+.header .btns {
+    margin-left: 72px;
+
+  
+}
+
+.header .btns .btn {
+    display: block;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #222222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center; /*글자 배열은 가운데*/
+    line-height: 50px;
+
+
+}
+
+
+
+/* 일단 여기 */
+
+.contents {
+}
+
+.contents .section {}
+
+.contents .titles {}
+
+.city_list {}
+
+.insta_list {}
+
+.footer {}
+
+.footer p {}
+
+.footer .sns {}
+

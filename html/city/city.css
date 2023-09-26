@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #222;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;;
+}
+
+.wrap {}
+
+/* header */
+.header {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    align-items: center;
+    padding: 27px 60px ;
+    justify-content: space-around;
+
+}
+
+.header .logo {
+    margin-right: auto;
+}
+
+
+.header .logo img {
+    width: 93px;
+    display: block;
+
+}
+
+
+.header .gnb {
+    display: flex;
+}
+
+
+.header .gnb li a {
+    display: block;
+    padding: 0px 55px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.header .btns {
+    margin-left: 72px;
+}
+
+.header .btns .btn {
+    display: block;
+    background-color: #000000;
+    font-size: 18px;
+    width: 120px ;
+    height: 50px ;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 6px;
+    color: #fff;
+
+
+}
+ 
+
+
+
+/* contents */
+.contents {
+    width: 1170px;
+    margin: 0 auto;
+    padding:  120px 0;
+
+}
+
+.contents .section : :nth-child(1) {
+    margin-bottom: 84px;
+
+}
+
+.titles {
+    margin-bottom: 30px ;
+    position: relative;
+}
+
+.titles .view {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.titles span {
+    
+}
+
+
+.titles h2 {
+    display: block;
+    font-size: 26px;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.titles p {
+    display: block;
+    font-size: 16px;
+    color: #4B4B4B;
+}
+
+.city_list , .insta_list {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.city_list li img {
+    width: 570px;
+    display: block;
+
+}
+
+
+.titles h2 {
+    display: black;
+    font-size: 26px;
+    color: #222;
+    padding-bottom: 29px;
+    font-weight: 600;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding-top: 52px;
+    padding-bottom: 56px;
+}
+
+.sns {
+    display: flex;
+    gap: 30px;
+}
