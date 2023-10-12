@@ -42,6 +42,7 @@ body {
 
 .gnb > li {
     position: relative;
+    z-index: 1;
 }
 
 .gnb > li > a {
@@ -60,7 +61,7 @@ body {
     top: 100px;
     left: 0;
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 
 .gnb ul li a {
@@ -139,7 +140,7 @@ body {
 .notice_list li {
     position: relative;
     padding-left: 10px;
-    display: none;
+    /* display: none; */
 }
 
 .notice_list li:before {
@@ -150,13 +151,17 @@ body {
     left: 0;
 }
 
+/* .notice_list li::after{
+    content: '안녕';
+} */
+
 .notice_list  li a {
     display: block;
     padding: 6px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 360px;
+    width: 350px;
 }
 
 .notice_list li a:hover {
@@ -165,11 +170,13 @@ body {
 
 .gallery_list {
     padding: 10px;
+    display: none;
 }
 
 .gallery_list ul {
     display: flex;
-    flex: 1;
+    justify-content: space-between;
+
 }
 
 .gallery_list img {
@@ -219,4 +226,37 @@ body {
 .footer .sns {
     display: flex;
     gap: 30px;
+}
+
+.popup {
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+
+}
+
+.popup h2 {
+    font-size: 26px;
+}
+
+.popup p {
+    padding: 40px 0;
+}
+
+.popup button {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
 }
