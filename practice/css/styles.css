@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid blue;
+}
+
+.header .logo {
+    display: block;
+}
+
+.header .gnb {
+    display: flex;
+    z-index: 1;
+}
+
+.header .gnb > li > a {
+    display: block;
+    height: 100px;
+    padding: 0 40px;
+    line-height: 100px;
+}
+
+.header .gnb > li > a:hover {
+    color: red;
+}
+
+   
+.gnb > li {
+    position: relative;
+
+}
+
+.gnb ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+
+}
+
+.gnb ul li a {
+    /* display: none; */
+    padding: 16px 10px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -2400px;
+}
+
+.slide img {
+    display: block;
+    
+}
+
+.contents {
+    display: flex;
+    margin: 10px 0;
+    gap: 24px;
+}
+
+.contents > div {
+    flex: 1;
+}
+
+.boarder .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.boarder .titles h2 {
+    width: 190px;
+    height: 48px;
+    background-color: #ff6347;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.boarder .titles h2:last-child {
+    background-color: #d9d9d9;
+    color: #333;
+}
+
+
+.boarder .list {
+}
+
+.list .notice_list {
+    padding: 10px 4px;
+    /* display: none; */
+    
+}
+
+.list .notice_list li {
+    position: relative;
+    padding-left: 10px;
+}
+
+
+.list .notice_list li::before {
+    content: '>';
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.list .notice_list li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+    padding: 4px;
+    
+}
+
+.list .notice_list li a:hover {
+    text-decoration: underline;
+}
+
+.list .gallery_list {
+    display: flex;
+    padding: 8px 15px;
+    gap: 10px;
+    justify-content: space-between;
+    display: none;
+}
+
+.list .gallery_list img {
+    display: block;
+    width: 110px;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.link {}
+.link ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+.link li a {
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    display: block;
+    line-height: 85px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.link li a:hover {
+    background-color: #b3b3b3;
+    font-weight: bold;
+}
+
+.footer {
+    height: 100px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.sns {
+    display: flex;
+    gap: 20px;
+}
+
+.modal {
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    position: relative;
+}
+
+.modal h3 {
+    font-size: 26px;
+}
+
+.modal p {
+    padding: 50px 0;
+  
+}
+
+.modal button {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    padding: 8px 16px;
+
+}

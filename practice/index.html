@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="../practice/css/styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="../web design_5/img/logo.png" alt=""></a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">탑</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">니트</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아우터</a>
+                    <ul>
+                        <li><a href="#">코트</a></li>
+                        <li><a href="#">가디건</a></li>
+                        <li><a href="#">자켓</a></li>
+                        <li><a href="#">패딩</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">팬츠</a>
+                    <ul>
+                        <li><a href="#">청바지</a></li>
+                        <li><a href="#">면바지</a></li>
+                        <li><a href="#">짧은바지</a></li>
+                        <li><a href="#">치마바지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">악세서리</a>
+                    <ul>
+                        <li><a href="#">머리띠</a></li>
+                        <li><a href="#">모자</a></li>
+                        <li><a href="#">팔찌</a></li>
+                        <li><a href="#">가방</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../web design_5/img/slider_01.jpg" alt=""></div>
+                <div class="slide"><img src="../web design_5/img/slider_02.jpg" alt=""></div>
+                <div class="slide"><img src="../web design_5/img/slider_03.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="boarder">
+                <div class="titles">
+                    <h2 class="">공지사항</h2>
+                    <h2 class="active">갤러리</h2>
+                </div>
+                <div class="list">
+                    <ul class="notice_list">
+                        <li>
+                            <a href="showModal">2023년 10월 11일 화요일 오전 11시 48분. 오늘의 날씨는 흐림. 점심시간이 다가온다. </a>
+                        </li>
+                        <li>
+                            <a href="#">오늘의 날씨는 흐림. 점심시간이 다가온다. </a>
+                        </li>
+                        <li>
+                            <a href="#">오전 11시 48분. 오늘의 날씨는 흐림. 점심시간이 다가온다. 10월 11일 화요일 오전 11시 48분. </a>
+                        </li>
+                        <li>
+                            <a href="#">10월 11일 화요일 오전 11시 48분. 오늘의 날씨는 흐림. 점심시간이 다가온다. </a>
+                        </li>
+                    </ul>
+                    <ul class="gallery_list">
+                        <li><a href="showModal"><img src="https://picsum.photos/100/101" alt=""></a></li> 
+                        <li><a href="#"><img src="https://picsum.photos/100/102" alt=""></a></li> 
+                        <li><a href="#"><img src="https://picsum.photos/100/103" alt=""></a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="../web design_5/img/banner_01.jpg" alt="">
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#">헤이뮤직</a></li>
+                    <li><a href="#">나의계정</a></li>
+                    <li><a href="#">클라우드</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>    
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_logo"><img src="../web design_5/img/footer_logo.png" alt=""></div>
+            <div class="copyright"> ⓒ 2021 Kakao Enterprize. The Kakao is a trademark of Kakaocorp.</div>
+            <div class="sns">
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">youtube</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <h3>이것은 팝업창입니다.</h3>
+        <p>제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다. 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한</p>
+        <button class="closeModal">닫기</button>
+    </div>
+
+    <script>
+        $('.showModal').click(function(){
+            $('.modal').show()
+        })
+        $('.closeModal').click(function(){
+            $('.modal').hide()
+        })
+    </script>
+    
+</body>
+</html>

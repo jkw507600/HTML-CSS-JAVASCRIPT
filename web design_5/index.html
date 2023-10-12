@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just shopping mall</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../web design_5/css/styles.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="../web design_5/img/logo.png" alt="로고"></a></div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">탑</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티셔츠</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아우터</a>
+                    <ul>
+                        <li><a href="#">자켓</a></li>
+                        <li><a href="#">코트</a></li>
+                        <li><a href="#">가디건</a></li>
+                        <li><a href="#">머플러</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">팬츠</a>
+                    <ul>
+                        <li><a href="#">청바지</a></li>
+                        <li><a href="#">짧은바지</a></li>
+                        <li><a href="#">긴바지</a></li>
+                        <li><a href="#">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">악세서리</a>
+                    <ul>
+                        <li><a href="#">귀고리</a></li>
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">반지</a></li>
+                        <li><a href="#">팔찌</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../web design_5/img/slider_01.jpg" alt="슬라이더1"></div>
+                <div class="slide"><img src="../web design_5/img/slider_02.jpg" alt="슬라이더2"></div>
+                <div class="slide"><img src="../web design_5/img/slider_03.jpg" alt="슬라이더3"></div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="board">
+                <div class="titles">
+                    <h2 class="active">공지사항</h2>
+                    <h2 class="">갤러리</h2>
+                </div>
+                <div class="lists">
+                    <ul class="notice_list">
+                        <li><a href="#" class="showModal">2021년 2월 무이자 할부 카드안내. 2021 2월 2021년 2월 무이자 할부 카드안내. 2021 2월</a></li>
+                        <li><a href="#">2021 2월 2021년 2월 무이자 할부 카드안내. 2021 2월</a></li>
+                        <li><a href="#">2021년 2월 무이자 할부 카드안내. 2021 2월</a></li>
+                        <li><a href="#">무이자 할부 카드안내. 2021 2월 2021년 2월 무이자 할부 카드안내. 2021 2월</a></li>
+                    </ul>
+                    <ul class="gallery_list">
+                        <li><a href="#"><img src="https://picsum.photos/100/100" alt="갤러리1"></a></li>
+                        <li> <a href="#"><img src="https://picsum.photos/101/101" alt="갤러리2"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/102/102" alt="갤러리3"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="../web design_5/img/banner_01.jpg" alt="배너"></a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#">헤이 음악</a></li>
+                    <li><a href="#">클라우드</a></li>
+                    <li><a href="#">계정 추가</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f_logo"><img src="../web design_5/img/footer_logo.png" alt="하단로고"></div>
+            <div class="copyright">ⓒ 2020 kakao Enterprise. The kakao is a trade of kakaocorp</div>
+            <div class="sns">
+                <a href="#">인스타그램</a>
+                <a href="#">카카오톡</a>
+                <a href="#">유투브</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <h3>팝업입니다.</h3>
+        <p>국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 모든 국민은 학문과 예술의 자유를 가진다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.</p>
+        <button class="closeModal">닫기</button>
+    </div>
+
+    <script>
+        // ./menu
+        $('.gnb').hover (
+            function(){
+                $(this).find('ul').slideDown('fast')
+            },
+            function(){
+                $(this),find('ul').slideUp('fast')
+            }
+        )
+
+
+        // ./modal
+        $('.showModal').click(function(){
+            $('.modal').show ()
+        })
+        
+        $('.closeModal').click(function(){
+            $ ('.modal').hide ()
+
+        })
+        
+    </script>
+</body>
+</html>

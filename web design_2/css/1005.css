@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    color: #222222;
+    line-height: 1.4;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid #002866;
+}
+
+h1.logo {
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 35px;
+    text-indent: -9999px;
+    display: block;
+}
+
+nav {}
+
+.header ul {
+    display: flex;
+}
+
+.header li a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 40px;
+}
+
+.header li a:hover {
+    color: coral;
+}
+
+.slider .slide img {
+    width: 100%;
+    display: block;
+}
+
+
+.contents {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.contents .board, 
+.contents .banner, 
+.contents .link {
+    height: 180px;
+    flex: 1;
+}
+
+.board .title {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.board .title h2 {
+    flex: 1;
+    background-color: #ff6347;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.board .title h2:last-child {
+    background-color: #f0f0f0;
+    color: #222222;
+}
+
+.board ul {
+    padding: 10px;
+}
+
+.board li a {
+    display: block;
+    padding: 4px;
+}
+
+.board li a:hover {
+    text-decoration: underline;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link li a {
+    background-color: #d9d9d9;
+    display: block;
+    height: 85px;
+    width: 184px;
+    text-align: center;
+    line-height: 85px;
+    border-radius: 6px;
+}
+
+.link li a:hover {
+    font-weight: bold;
+}
+
+.footer {
+    height: 100px;
+    line-height: 100px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.footer img {
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.footer .sns {
+    gap: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .sns a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .sns i {
+    font-size: 20px;
+}

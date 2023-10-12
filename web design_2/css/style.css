@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #222222;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+h1.logo {
+    text-indent: -999px;
+    width: 150px;
+    height: 30px;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a {
+    padding: 0 40px;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+}
+
+header ul li a:hover { 
+    color: #ff0000 ;
+}
+
+.slide img {
+    flex: block;
+}
+
+main {
+    display: flex;
+    margin-top: 10px;
+    gap: 24px;
+}
+
+main section {
+    flex: 1;
+}
+
+section.banner img {
+    display: block;
+}
+
+section.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+section.board .titles h2 {
+    height: 48px;
+    text-align: center;
+    flex: 1;
+    line-height: 48px;
+    font-size: 14px;
+    
+}
+
+section.board .titles h2:first-child {
+    background-color: #ff6347;
+}
+section.board .titles h2:last-child {
+    background-color: #f0f0f0;
+}
+
+section.board ul {
+    padding: 10px;
+}
+section.board li a {
+    display: block;
+    padding: 4px;
+}
+
+section.board li a:hover {
+    text-decoration: underline;
+}
+
+section.links {
+
+}
+
+section.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+section.links li a {
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+footer {
+    width: 1200px;
+    height: 100px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+
+}
+
+footer h1 {
+    background-image: url(../image/logo.png);
+    text-indent: -999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 154px;
+    height: 30px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    mix-blend-mode: multiply;
+}
+
+footer .sns {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    
+}
+
+footer .sns a  {
+    font-size: 16px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+ 
+}
+
+footer .sns i {
+   font-size: 24px;
+}
