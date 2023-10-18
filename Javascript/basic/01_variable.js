@@ -49,3 +49,35 @@ console.log(myname)
     // subject = 'css'
     console.log(subject)
 }
+
+// 4. 변수의 데이타 타입 - 자료형
+
+// 문자형 String
+
+{
+    const name1 = 'Alice'
+    const name2 = 'Alice'
+
+    console.log(name1,name2)
+    const firstName = 'jonh'
+    const lastName ='snow'
+    const fullName = firstName + ' ' + lastName
+    console.log(fullName)
+    console.log('$')
+}
+
+// 숫자형 number
+{
+    const num = 10
+    const PI = 3.14
+
+    
+    console.log('값은 ${num}이고, 타입은 ${typeof num}입니다.}')
+
+    console.log(a)
+}
+
+// 불(불린,불린언) Boolean 
+
+// null - 존재하기 않는 값
+// underfined - 값이 할당되지 않음

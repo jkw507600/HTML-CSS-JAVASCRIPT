@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    font-weight: normal;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.header .logo img {
+    display: block;
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.gnb > li {
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gnb li ul {
+    /* display: none; */
+}
+
+.gnb ul li {}
