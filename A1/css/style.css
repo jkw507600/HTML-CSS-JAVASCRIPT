@@ -66,7 +66,7 @@ body {
     background-color: rgb(175, 175, 255);
     color: navy;
     font-weight: bold;
-    /* display: none; */
+    display: none;
 }
 
 .gnb ul li {
@@ -89,7 +89,7 @@ body {
 }
 
 .slides {
-    display: flex;
+    /* display: flex; */
     position: absolute;
     top: 0;
     left: 0;
@@ -152,38 +152,54 @@ body {
     background-color: #333;
 }
 
-.notice_list li {
+.notice_list {
     margin: 12px;
 }
 
-.notice_list {
-    /* display: none; */
-    padding: 10px 0;
+.notice_list li {
+    padding: 6px;
+    position: relative;
 }
 
+.notice_list li::before {
+    content: ">";
+    color: navy;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+}
+
+.notice_list li a {
+    margin-left: 8px;
+}
 
 .notice_list li a:hover {
     text-decoration: underline;
 }
 
-.gallery_list {
-    /* display: none; */
+.list .item {
+    display: none;
 }
 
 .gallery_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;   
+    height: 150px;
     padding: 20px;
 }
 
-.gallery_list li a {
+.gallery_list li {
+    display: inline-block;
+    padding-right: 10px;
+}
 
+.gallery_list li:last-child {
+    padding-right: 0;
 }
 
 .gallery_list img {
     display: block;
+    width: 110px;
 }
 
 .footer {
@@ -192,7 +208,7 @@ body {
     background-color: #eee;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 25px;
 }
 
 .copyright {
@@ -201,7 +217,12 @@ body {
 
 .sns {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+}
+
+.sns img {
+    display: block;
+    width: 40px;
 }
 
 .modal {
@@ -214,7 +235,7 @@ body {
     border: 1px solid #333;
     background-color: #fff;
     padding: 40px;
-    /* display: none; */
+    display: none;
 }
 
 .modal h3 {
