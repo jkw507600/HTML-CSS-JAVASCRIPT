@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;
+    /* height: 120px; */
+}
+
+.logo {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.gnb {
+    padding: 15px;
+}
+
+.gnb > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    /* display: flex; */
+    background-color: #d9d9d9;
+    /* width: 100vw; */
+    width: calc(100vw - 200px);
+    z-index: 1;
+}
+
+.gnb> li:hover > a {
+    background-color: #d9d9d9;
+}
+
+.gnb ul li {
+    display: inline-block;
+}
+
+.gnb ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 130px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.gnb ul li a:hover {
+    background-color: #888;
+    color: #fff;
+}
+
+.spot_menu {
+    text-align: center;
+   
+}
+
+.right {
+    width: calc(100% - 200px);
+    height: 850px;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    position: relative;
+}
+.slides {
+    position: relative;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top_banner {
+    z-index: 2;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top_banner img {
+    display: block;
+}
+
+.banner {
+    position: relative;
+
+}
+
+.banner .thumb {
+    width: 100%;
+    height: 200px;
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .titles {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.tap {
+    height: 250px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer .right {
+    height: 120px;
+}
