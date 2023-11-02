@@ -123,13 +123,17 @@ body {
 .top_banner {
     z-index: 2;
     position: absolute;
-    position: absolute;
     top: 0;
     right: 0;
+    width: 110px;
+    height: 110px;
 }
 
 .top_banner img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .banner {
@@ -154,16 +158,159 @@ body {
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
+    color: #fff;
 }
 
 .tap {
     height: 250px;
+    padding: 10px 0;
+
+}
+
+.tap .titles {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.titles h2 {
+    width: 120px;
+    height: 45px;
+    background-color: #888;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.titles h2.active {
+    background-color: #fff;
+    color: #333;
+}
+
+.tap .lists {
+    padding: 15px 10px;
+}
+
+.notice_list {
+    /* display: none; */
+}
+
+.notice_list li {
+    padding: 8px;
+    position: relative;
+}
+
+.notice_list li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 800px;
+    display: block;
+}
+
+.notice_list span {
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+}
+
+.gallery_list {
+    display: none;
+}
+
+.gallery_list li {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin: 0 10px;
+}
+
+.gallery_list li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer {
     display: flex;
 }
 
+.footer .left {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.left .f_logo {
+    width: 180px;
+}
+.left .f_logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
 .footer .right {
     height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    padding-left: 30px;
+}
+
+.footer_menu li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 8px;
+}
+
+.copyright {
+    color: #888;
+    font-size: 12px;
+}
+
+.modal {
+    background-color: #d9d9d9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 620px;
+    height: 370px;
+    padding: 70px 50px;
+    display: none;
+}
+
+.modal h3 {
+    padding-bottom: 40px;
+    font-size: 28px; 
+}
+
+.modal p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.modal a {
+    display: block;
+    width: 60px;
+    height: 40px;
+    background-color: #666;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    cursor: pointer;
 }

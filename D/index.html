@@ -61,8 +61,8 @@
                     </div>
                     <div class="top_banner">
                         <a href="#"><img src="./img/Contents/gallery 이미지/icon1.jpg" alt=""></a>
-                        <a href="#"><img src="./img/Contents/gallery 이미지/icon1.jpg" alt=""></a>
-                        <a href="#"><img src="./img/Contents/gallery 이미지/icon1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/Contents/gallery 이미지/icon2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/Contents/gallery 이미지/icon3.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="banner">
@@ -75,17 +75,17 @@
                 </div>
                 <div class="tap">
                     <div class="titles">
-                        <h2>공지사항</h2>
+                        <h2 class="active">공지사항</h2>
                         <h2>갤러리</h2>
                     </div>
                     <div class="lists">
-                        <ul class="notice_list">
-                            <li><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eaque laboriosam vitae officiis provident at mollitia nemo quis enim esse maxime molestias aliquam similique odio voluptatem? Voluptas, qui ullam. Officiis! <span>2023.03.03</span></a></li>
+                        <ul class="item notice_list">
+                            <li><a href="#" class="showModal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eaque laboriosam vitae officiis provident at mollitia nemo quis enim esse maxime molestias aliquam similique odio voluptatem? Voluptas, qui ullam. Officiis! <span>2023.03.03</span></a></li>
                             <li><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eaque laboriosam vitae officiis provident at mollitia nemo quis enim esse maxime molestias aliquam similique odio voluptatem? Voluptas, qui ullam. Officiis! <span>2023.03.03</span></a></li>
                             <li><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eaque laboriosam vitae officiis provident at mollitia nemo quis enim esse maxime molestias aliquam similique odio voluptatem? Voluptas, qui ullam. Officiis! <span>2023.03.03</span></a></li>
                             <li><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eaque laboriosam vitae officiis provident at mollitia nemo quis enim esse maxime molestias aliquam similique odio voluptatem? Voluptas, qui ullam. Officiis! <span>2023.03.03</span></a></li>
                         </ul>
-                        <ul class="gallery_list">
+                        <ul class="item gallery_list">
                             <li><a href="#"><img src="./img/Contents/gallery 이미지/icon1.jpg" alt=""></a></li>
                             <li><a href="#"><img src="./img/Contents/gallery 이미지/icon2.jpg" alt=""></a></li>
                             <li><a href="#"><img src="./img/Contents/gallery 이미지/icon3.jpg" alt=""></a></li>
@@ -116,6 +116,22 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <h3>신규회원 대상 이벤트 안내</h3>
+        <p>즐거운 쇼핑 환경을 위해 항상 노력하는 JUST 쇼핑몰입니다. 고객님들께 한 단계 더 나아가 보답하는 ON쇼핑몰이 되고자신규회원 대상 10% 할인 이벤트를 실시하고 있습니다. 웹과 모바일에서 모두 이용 가능하며, 수준 높은 서비스를 위해 앞으로도 꾸준히 노력할 것을 약속드립니다.</p>
+        <a href="#" class="closeModal">버튼</a>
+    </div>
+
+    <script>
+        $('.showModal').click(function(){
+            $('.modal').show ()
+        })
+        
+        $('.closeModal').click(function(){
+            $ ('.modal').hide ()
+
+        })
+    </script>
     <script>
         $('.gnb').hover(
             function(){
@@ -140,6 +156,19 @@
             current = next
         }, 2000)   
 
+    </script>
+    <script>
+        $('.item').eq(0).show()
+
+        $('.titles h2').click(function(){            
+            var idx =  $(this).index()
+            
+            $('.titles h2').removeClass('active')
+            $(this).addClass('active')
+
+            $('.item').hide()
+            $('.item').eq(idx).show()  
+        })    
     </script>
     
 </body>
