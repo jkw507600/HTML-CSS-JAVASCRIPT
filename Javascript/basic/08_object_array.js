@@ -1,5 +1,6 @@
 // Array 배열
 
+
 // 1. 배열 만들기
 {
     // const arr1 = new Array()
