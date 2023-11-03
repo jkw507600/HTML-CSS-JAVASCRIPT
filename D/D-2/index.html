@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울구석구석</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="left">
+                <div class="logo">
+                    <img src="./img/Header/logo.png" alt="">
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">지금의 서울</a>
+                        <ul>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">축제&행사</a></li>
+                            <li><a href="#">전시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">추천</a>
+                        <ul>
+                            <li><a href="#">에디터 추천</a></li>
+                            <li><a href="#">테마코스</a></li>
+                            <li><a href="#">도보해설관광</a></li>
+                            <li><a href="#">한류관광</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">여행지</a>
+                        <ul>
+                            <li><a href="#">명소</a></li>
+                            <li><a href="#">엔터테인먼트</a></li>
+                            <li><a href="#">음식</a></li>
+                            <li><a href="#">게스트하우스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">여행정보</a>
+                        <ul>
+                            <li><a href="#">가이드북&지도</a></li>
+                            <li><a href="#">시티투어버스</a></li>
+                            <li><a href="#">날씨</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="mmain">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide"><img src="./img/[Slide]/img1.jpg" alt=""></div>
+                            <div class="slide"><img src="./img/[Slide]/img2.jpg" alt=""></div>
+                            <div class="slide"><img src="./img/[Slide]/img3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <div class="photo"><img src="./img/Contents/배너 이미지/banner.jpg" alt=""></div> 
+                        <div class="title">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, odio ratione maiores iure aliquam minus hic aut eos, pariatur consequatur veniam, inventore unde labore quo?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="board first">
+                        <div class="tap">
+                            <h2>공지사항</h2>
+                        </div>
+                        <ul class="list">
+                            <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, temporibus!</a><span>2023-11-03</span></li>
+                            <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, temporibus!</a><span>2023-11-03</span></li>
+                            <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, temporibus!</a><span>2023-11-03</span></li>
+                            <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, temporibus!</a><span>2023-11-03</span></li>
+                        </ul>
+                    </div>
+                    <div class="board last">
+                        <div class="tap">
+                            <h2>갤러리</h2>
+                        </div>
+                        <ul class="list">
+                            <a href="#"><img src="./img/Contents/gallery 이미지/icon1.jpg" alt=""></a>
+                            <a href="#"><img src="./img/Contents/gallery 이미지/icon2.jpg" alt=""></a>
+                            <a href="#"><img src="./img/Contents/gallery 이미지/icon3.jpg" alt=""></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_logo">
+                <img src="./img/Footer/footerLogo.png" alt="">
+            </div>
+            <div class="copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti suscipit similique.</div>
+            <div class="family_site">Family site</div>
+        </div>
+    </div>
+    <script>
+        $('.gnb > li').hover(
+            function(){
+                $(this).find('ul').show()
+            },
+            function(){
+                $(this).find('ul').hide()
+            },
+        )
+    </script>
+    <script>
+         setInterval(function(){
+            $('.slides').animate({left: '-100%'}, function(){
+                $('.slide').first().appendTo('.slides')
+                $(this).css('left', 0)
+            })
+        }, 3000)
+    </script>
+    
+</body>
+</html>
